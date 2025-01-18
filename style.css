@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: arial;
+    font-size: 1.8em;
+    margin: 30px 40px 30px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-column-end: 2;
+}
+
+#links {
+    text-align: right;
+    a {
+        color: black;
+        font-size: .8em;
+        padding-left: 25px;
+        text-decoration: none;
+    }
+}
+
+main {
+    border-top: solid;
+    margin-bottom: 20px;
+}
+
+#desc {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 200px 0px 100px 100px;
+}
+
+#whatis {
+    font-family: monospace;
+    font-size: 5em;
+    font-style: initial;
+    font-weight: bold;
+}
+
+#describe {
+    padding-top: 100px;
+    padding-right: 50px;
+    font-size: 1.3em;
+    font-family: arial;
+    button {
+        padding: 10px;
+        font-family: monospace;
+        border-style: solid black 1px;
+        border-radius: 50px;
+    }
+}
+
+#aluguel {
+    padding: 100px 0px 0px 100px;
+    border-top: solid;
+}
+
+#title-aluguel {
+    font-size: 5em;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+#disc-aluguel {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    img {
+        padding: 300px;
+        border: solid;
+        border-radius: 0px;
+        margin: 50px 100px 0px 100px;
+        padding: 0px 0px 0px 0px;
+        width: 700px;
+        height: 600px;
+    }
+    label {
+        border: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: gray;
+        margin: 70px 150px 0px 0px;
+        padding: 50px 50px 0px 200px;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+#tipos-de-servico {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    margin: 200px 0px 0px 50px;
+    h2 {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 2.5em;
+        margin-left: 80px;
+    }
+    .texto-servico {
+        margin: 0px 60px 0px 0px;
+        width: 500px;
+        text-align: center;
+        font-family: arial;
+    }
+    button {
+        margin-left: 180px;
+        border-style: solid black 1px;
+        border-radius: 50px;
+        padding: 10px 15px;
+    }
+}
+
+#contato {
+    text-align: center;
+    margin-top: 300px;
+    font-family: arial;
+    h1 {
+        font-family: monospace;
+        font-size: 5em;
+    }
+    #desc-contato {
+        width: 1500px;
+        text-align: center;
+    }
+    img {
+        margin: 200px 0px;
+    }
+}
+
+#business {
+    margin-top: 200px;
+    text-align: center;
+    font-family: arial;
+}
