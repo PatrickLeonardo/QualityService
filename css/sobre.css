@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    img {
+        margin: 150px 0px 0px 120px;
+        width: 1500px;
+        height: 350px;
+    }
+}
+
+header {
+    font-family: arial;
+    font-size: 1.8em;
+    margin: 30px 40px 30px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    h1 {
+        font-size: 1.4em;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+#links {
+    text-align: right;
+    a {
+        color: black;
+        font-size: .8em;
+        padding-left: 25px;
+        text-decoration: none;
+    }
+}
+ 
+#desc {
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 0px;
+    label {
+        font-family: arial;
+        font-size: 1.5em;
+        margin-top: 160px;
+        padding-right: 100px;
+    }
+}
+
+#main-missao {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    margin-bottom: 900px;
+    img {
+        width: 980px;
+        height: 662px;
+        padding: 0px;
+        margin: 0px 0px 0px 300px;
+        position: absolute;
+    }
+    #missao {
+        position: absolute;
+        font-family: arial;
+        font-size: 1.2em;
+        padding: 50px;
+        margin: 200px 200px 0px 900px;
+        width: 500px;
+        height: 200px;
+        background-color: #e8e8fa;
+        border-radius: 10px;
+        div {
+            margin-right: 40px;
+        }
+    }
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 4em;
+    margin: 150px 0px 0px 150px;
+}
+
+#equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    font-family: arial;
+    margin: 0px 100px;
+    
+    div {
+        background-color: #d8dee9;
+        margin: 50px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    label {
+        padding-right: 150px;
+    }
+}
+
+#title-diferencial {
+    padding: 0px;
+    margin: 200px 0px 0px 40%;
+    font-family: monospace;
+}
+
+#diferencial {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    margin: 50px 0px 0px 0px;
+    div {
+        background-color: #eceff4;
+        margin: 20px;
+        padding: 10px;
+        width: 520px;
+        border-radius: 10px;
+    }
+    h2 {
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 2.2em;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .texto {
+        margin: 0px 60px 0px 0px;
+        width: 500px;
+        text-align: left;
+        font-family: arial;
+        font-size: 1.2em;
+    }
+}
+
+#business {
+    margin: 200px 0px 50px 0px;
+    text-align: center;
+    font-family: arial;
+}
