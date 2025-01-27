@@ -142,7 +142,7 @@ main {
         margin-right: 30px;
         #links {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: flex-end;
             width: 100%;
         }
@@ -212,7 +212,20 @@ main {
     }
 
     #contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin: 100px 0px 50px 0px;
+        #descricao-contato {
+            width: 100%;
+            margin: 50px 0px;
+            padding: 0px 10%;
+        }
     }
+
+    #business {
+        margin-top: 50px;
+    }
+
 
 }
