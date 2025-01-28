@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "tailwindcss";
 
 html, body {
     margin: 0px;
@@ -14,38 +15,35 @@ header {
     font-family: arial;
     font-size: 1.8em;
     margin: 30px 40px 30px 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-column-end: 2;
+    display: flex;
+    justify-content: space-between;
+
     h1 {
         font-size: 1.4em;
-        font-family: arial;
         padding: 0px;
         margin: 0px;
+        font-family: arial;
     }
-}
 
-#links {
-    text-align: right;
-    a {
-        color: black;
-        font-size: .8em;
-        padding-left: 25px;
-        text-decoration: none;
+    #links {
+        text-align: right;
+        a {
+            color: black;
+            font-size: .8em;
+            padding-left: 25px;
+            text-decoration: none;
+        }
     }
 }
  
 #desc {
     margin-bottom: 200px;
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-column-start: 1;
-    grid-column-end: 2;
+    display: flex;
     padding: 0px;
     border-top: solid;
+    h1 {
+        width: 100%;
+    }
     label {
         font-family: arial;
         font-size: 1.5em;
@@ -55,8 +53,7 @@ header {
 }
 
 #main-missao {
-    display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
+    display: flex;
     margin-bottom: 900px;
     img {
         width: 980px;
@@ -69,7 +66,7 @@ header {
         position: absolute;
         font-family: arial;
         font-size: 1.2em;
-        padding: 50px;
+        padding: 50px 50px 250px 50px;
         margin: 200px 200px 0px 900px;
         width: 500px;
         height: 200px;
@@ -88,8 +85,7 @@ h1 {
 }
 
 #equipe {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
+    display: flex;
     font-family: arial;
     margin: 0px 100px;
     
@@ -111,8 +107,7 @@ h1 {
 }
 
 #diferencial {
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
+    display: flex;
     margin: 50px 0px 0px 0px;
     div {
         background-color: #eceff4;
@@ -145,77 +140,108 @@ h1 {
 
 @media (max-width: 1000px) {
 
-    #links {
-        display: grid;
-        grid-template-rows: repeat(3, 0.5fr);
+    header {
+        margin-right: 30px;
+        #links {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+        }
     }
 
     #desc {
-        grid-template-columns: repeat(1, 0.8fr);
-        grid-template-rows: repeat(2, 0.5fr);
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 100px;
         h1 {
-            margin: 80px 0px 0px 0px;
+            text-align: center;
+            font-size: 300%;
+            margin: 60px 0px 0px 0px;
         }
         label {
-            margin: 70px 0px 0px 0px;
-            padding: 0px;
-            width: 100%;
+            text-align: center;
+            padding: 40px 10% 0% 10%;
+            margin: 0px;
+            font-size: 120%;
         }
 
     }
 
     #main-missao {
-        margin-bottom: 700px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 600px;
         img {
             width: 80%;
             height: 400px;
-            margin-left: 10%;
+            margin-left: 0%;
         }
         #missao {
-            margin-top: 80px;
-            margin-left: 10%;
-            width: 56%;
-            height: 300px;
+            margin: 80px 0px 0px 0px;
+            padding: 10px;
+            width: 80%;
+            height: 400px;
+            h2 {
+                font-weight: bold;
+                padding: 20px 0px 0px 20px;
+            }
             div {
                 margin: 0px;
-                padding: 0px;
+                padding: 10px;
             }
         }
     }
 
     #title-equipe {
-        margin-left: 100px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
     }
 
     #equipe {
-        grid-template-columns: repeat(1, 0.8fr);
-        grid-template-rows: repeat(3, 0.5fr);
-        margin-left: 5%;
-        label {
-            display: block;
-            width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 10%;
+        div {
+            margin: 20px 0px;
+            h3 {
+                font-weight: bold;
+            }
+            label {
+                display: block;
+                width: 100%;
+                padding-right: 0px;
+            }
         }
     }
     
     #title-diferencial {
-        margin: 200px 0px 0px 0px;
+        margin: 80px 0px 30px 0px;
         padding-left: 0px;
+        font-size: 300%;
         text-align: center;
+        font-weight: bold;
     }
 
     #diferencial {
-        grid-template-columns: repeat(1, 0.8fr);
-        grid-template-rows: repeat(3, 0.5fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 0px;
         div {
+            text-align: center;
             margin: 20px 0px;
-            margin-left: 15%;
+            margin-left: 0%;
             width: 80%;
             .texto {
                 width: 90%;
             }
         }
+    }
+
+    #business {
+        margin-top: 100px;
     }
 
 }
