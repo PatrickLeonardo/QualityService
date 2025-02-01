@@ -6,15 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Início | Serviços</title>
         <link href="./img/Q&S-BRANCO-PNG.ico" rel="icon">
-        <link href="./style.css" rel="stylesheet">
+        <link href="./style.scss" rel="stylesheet">
     </head>
     
     <body>
         
         <header>
             
-            <h1>Quality Service</h1>
-            
+            <div id="title">
+                <h1>Quality Service</h1>
+            </div>
+
             <div id="links">
                 <a href="./index.html">Início</a>
                 <a href="./sobre.html">Sobre nós</a>
@@ -25,13 +27,28 @@
 
         <main>
             
-            <div id="descricao">
-                <h1>Transporte Confortável e Seguro</h1>
+            <div id="container-descricao">
                 
-                <label>Oferecemos locação de ônibus para turismo, atendendo escolas, igrejas e instituições, garantindo conforto, segurança e confiabilidade em passeios educativos. 
-                    <br><br>
-                    <button>Saiba Mais</button>
-                </label>
+                <div id="right-side">
+                    <div>
+                        <h1>Quem vai, </h1>
+                        <h1>vai de Quality</h1>
+                    </div>
+
+                    <p>
+                        A Quality Service é a solução para o transporte de eventos corporativos, religiosos, passeios escolares e turismo do Grupo Black Hawk.
+                        <br><br> 
+                        Só com a Quality você tem a experiência de gestão em transportes, aliada a tecnologia para oferecer uma viagem confortável e segura durante toda a jornada dos passageiros.
+                        <br><br>
+                        <a href="./">Solicitar Orçamento</a>
+                    </p>
+
+                </div>
+
+                <div id="image">
+                    <img src="img/imgBusSquad.webp" alt="">
+                </div>
+
             </div>
             
             <div id="aluguel">
@@ -47,29 +64,22 @@
 
             </div>
 
-            <div id="tipos-de-servico">
+            <div class="container">
                 
-                <div>
-                    <h2>Eventos Educacionais</h2>
-                    <div class="texto-servico">Nossos serviços incluem transporte para excursões religiosas, passeios escolares e eventos educacionais, sempre com excelência e comprometimento.</div>
-                    <br>
-                    <button>Contate-nos</button>
+                <div class="carousel"> 
+                    
+                    <div class="carousel__face"><span>This is something</span></div>
+                    <div class="carousel__face"><span>Very special</span></div>
+                    <div class="carousel__face"><span>Special is the key</span></div>
+                    <div class="carousel__face"><span>For you</span></div>
+                    <div class="carousel__face"><span>Just give it</span></div>
+                    <div class="carousel__face"><span>A try</span></div>
+                    <div class="carousel__face"><span>And see</span></div>
+                    <div class="carousel__face"><span>How IT Works</span></div>
+                    <div class="carousel__face"><span>Woow</span></div>
+                    
                 </div>
-
-                <div>
-                    <h2>Excursões Religiosas</h2>
-                    <div class="texto-servico">Prezamos por um serviço de qualidade, atendendo escolas, Emei, Emef, igrejas e eventos, proporcionando viagens seguras e agradáveis.</div>
-                    <br>
-                    <button>Solicite um orçamento</button>
-                </div>
-
-                <div>
-                    <h2>Passeios Escolares</h2>
-                    <div class="texto-servico">Com uma frota moderna e equipe dedicada, garantimos experiências inesquecíveis, conectando destinos de forma única.</div>
-                    <br><br>
-                    <button>Agente sua Viagem</button>
-                </div>
-
+                
             </div>
 
             <div id="contato">
