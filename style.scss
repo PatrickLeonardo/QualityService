@@ -7,6 +7,7 @@ $primary-title-color: black;
 html, body {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 header {
@@ -308,9 +309,9 @@ span {
     #container-descricao {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        /*flex-direction: column; */
         padding: 50px 0px;
-        margin: 0px 10%;
+        margin: 0px 0%;
         padding: 0px;
         width: 100%;
         text-align: center;
@@ -325,6 +326,7 @@ span {
         #image {
             width: 80%;
             margin-top: 40px;
+            margin-left: 0px;
         }
 
     }
@@ -366,15 +368,19 @@ span {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin: 100px 0px 50px 0px;
 
         #title-contact {
+            text-align: center;
             margin-bottom: 0px;
 
             #descricao-contato {
-                width: 100%;
                 margin: 50px 0px;
+                width: 100%;
                 padding: 0px;
+                text-align: center;
+                display: block;
             }
         }
 
