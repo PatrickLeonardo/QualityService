@@ -102,8 +102,6 @@ main {
         width: 40%;
         display: flex;
         justify-content: center;
-        margin-left: 40px;
-
         img {
             margin-top: 3%;
             color: transparent;
@@ -149,26 +147,27 @@ main {
     width: 320px;
     margin: 200px auto 800px auto;
     perspective: 1000px;
+
 }
  
 .carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d; 
-    animation: rotate360 90s infinite forwards linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
 }
 
 .carousel__face { 
-    position: absolute;
-    width: 300px;
-    height: 187px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
-    background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-    display: flex;
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
 }
 
 .galery__face {
@@ -183,10 +182,9 @@ main {
     display: flex;
 }
 
-span { 
-    color: white;
-    font-size: 1.5rem;
-    margin: 10%;
+span {
+    margin: auto;
+    font-size: 2rem;
 }
 
 .carousel__face:nth-child(1) {
@@ -295,10 +293,9 @@ span {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            width: 40%;
+            width: 100%;
 
             a {
-                width: auto;
                 padding: 0px;
             }
             
@@ -311,7 +308,6 @@ span {
         flex-direction: column;
         padding: 50px 0px;
         margin: 0px 10%;
-        padding: 0px;
         width: 100%;
         text-align: center;
         
@@ -324,7 +320,6 @@ span {
 
         #image {
             width: 80%;
-            margin-top: 40px;
         }
 
     }
@@ -334,8 +329,6 @@ span {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        margin-top: 50px;
-        padding-top: 0px;
         
         #title-aluguel {
             margin: 0px 10%;
@@ -352,14 +345,35 @@ span {
         }
     }
 
-    .container {
-        margin-top: 100px;
-        margin-bottom: 700px;
-        .carousel {
-            .carousel__face {
-                width: 70%;
+    .tipos-de-servico {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-top: 130px;
+        justify-content: center;
+        div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            h2 {
+                font-size: 200%;
+                text-align: center;
+                margin-left: 0px;
             }
-        }        
+            .texto-servico {
+                width: 100%;
+                margin-right: 0px;
+                padding: 30px 20px;
+                text-align: center;
+            }
+            button {
+                margin: 0px 0px 70px 0px;
+                padding: 10px;
+                font-family: monospace;
+                border: solid 1px;
+                border-radius: 50px;
+            }
+        }
     }
 
     #contact-us {
