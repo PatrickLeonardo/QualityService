@@ -374,10 +374,14 @@ span {
         #title-contact {
             text-align: center;
             margin-bottom: 0px;
+            
+            h2 {
+                margin: 0px 10%;
+            }
 
             #descricao-contato {
-                margin: 50px 0px;
-                width: 100%;
+                margin: 50px 10%;
+                width: 80%;
                 padding: 0px;
                 text-align: center;
                 display: block;
