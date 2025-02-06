@@ -272,13 +272,26 @@ header {
 
 @media (max-width: 1000px) {
 
-    header {
-        margin-right: 30px;
+   header {
+        margin-right: 0px;
+        
+        #title {
+            h1 {
+                margin-left: 15%;
+            }
+        }
+
         #links {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            width: 100%;
+            width: 40%;
+
+            a {
+                width: auto;
+                padding: 0px;
+            }
+            
         }
     }
 
@@ -293,9 +306,13 @@ header {
     #container-servicos {
         
         #servicos {
-            flex-direction: column; 
-            
+            flex-direction: column;  
+
             .servico {
+                
+                img {
+                    width: 100%;
+                }
                 
                 div {
                     width: auto;
