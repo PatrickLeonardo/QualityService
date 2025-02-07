@@ -117,6 +117,9 @@ main {
 
 #aluguel {
     padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     #title-aluguel {
         text-align: center;
@@ -128,18 +131,27 @@ main {
 
     #table-aluguel {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        border: solid;
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: rgb(70, 70, 70);
+        margin-top: 70px;
+        width: 80%;
+        height: 300px;
+        text-align: center;
+        align-content: center;
 
-        label {
-            border: solid;
-            border-radius: 5px;
-            border-width: 2px;
-            border-color: gray;
-            margin-top: 70px;
-            width: 80%;
-            height: 300px;
-            text-align: center;
-            align-content: center;
+        #reserv-date {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(70, 70, 70);
+
+            div {
+                padding: 5px 40px;
+            }
         }
     }
 
@@ -211,7 +223,7 @@ span {
 }
 
 .carousel__face:nth-child(5) { 
-    background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("https://ix-marketing.imgix.net/genfill.png?auto=format,compress&w=1946");
     transform: rotateY(160deg) translateZ(430px);
 }
 
@@ -346,12 +358,15 @@ span {
         
         #table-aluguel {
             width: 100%;
-            label {
-                width: 100%;
-                margin: 40px 10%;
+            height: 100%;
+            margin: 40px 10%;
+            padding: 0px;
+
+            #reserv-date {
                 padding: 0px;
             }
         }
+        
     }
 
     .container {

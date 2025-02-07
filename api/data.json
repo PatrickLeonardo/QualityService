@@ -1,0 +1,44 @@
+[
+    {
+        "type": "Confort Bus",
+        "date": "01/03/2025",
+        "people_limit": 45,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "05/03/2025",
+        "people_limit": 40,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "10/03/2025",
+        "people_limit": 40,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "15/03/2025",
+        "people_limit": 45,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "20/03/2025",
+        "people_limit": 40,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "25/03/2025",
+        "people_limit": 45,
+        "availability": "Disponível"
+    },
+    {
+        "type": "Confort Bus",
+        "date": "27/03/2025",
+        "people_limit": 45,
+        "availability": "Disponível"
+    }
+]
