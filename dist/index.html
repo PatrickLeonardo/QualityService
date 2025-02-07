@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Início | Serviços</title>
         <link href="/assets/Q_S-BRANCO-PNG-n5aCvFVQ.ico" rel="icon">
-      <link rel="stylesheet" crossorigin href="/assets/main-D57Jkp4c.css">
+      <link rel="stylesheet" crossorigin href="/assets/main-9CwohyKX.css">
     </head>
     
     <body>
@@ -56,10 +56,7 @@
                 <h1 id="title-aluguel">Aluguel de Ônibus</h1>
                 
                 <div id="table-aluguel" class="flex justify-center items-center w-screen">   
-                    <label>
-                        Não há nada para agendar agora.<br>
-                        Verifique em breve.
-                    </label>
+                    
                 </div>
 
             </div>
@@ -102,5 +99,32 @@
         </main>
 
     </body>
+
+    <script>
+        
+        fetch('http://localhost:3000/')
+            .then(response => response.json()
+                .then(data => {
+                    data.forEach(reserve => {
+
+                        const table = document.getElementById('table-aluguel')
+                        const date = document.createElement('div')
+                        const br = document.createElement('br')
+
+                        date.id = 'reserv-date'
+                        date.innerHTML = `
+                            <div>Tipo de Veículo: ${reserve.type} - Data: ${reserve.date}</div>
+                            <div> Limite de pessoas: ${reserve.people_limit} - Situação: ${reserve.availability}</div>
+                        `
+                        table.appendChild(br)
+                        table.appendChild(date)
+
+                    })
+                }).catch(error => {
+                    console.log(error)
+                })
+            )
+        
+    </script>
 
 </html>
