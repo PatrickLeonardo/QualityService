@@ -6,12 +6,15 @@ import ViteExpress from "vite-express";
 const data = JSON.parse(fs.readFileSync('./api/data.json'));
 const app = express();
 
-var corsOptions = {
-    origin: ["https://qualityservice.vercel.app/"],
+const corsOptions = {
+    origin: ["https://qualityservice.vercel.app/", 'http://localhost:5173/'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    exposedHeaders: ['Content-Length', 'X-Knowledge-Base'],
     optionsSuccessStatus: 200
 }
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 app.get("/", (_, res) => {
     res.send(data)

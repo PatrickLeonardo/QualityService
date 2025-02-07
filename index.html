@@ -102,7 +102,10 @@
 
     <script>
         
-        fetch('http://localhost:3000/')
+        fetch('http://localhost:3000/', {
+            mode: 'cors',
+            headers: { 'Access-Control-Allow-Origin': '*' }
+        })
             .then(response => response.json()
                 .then(data => {
                     data.forEach(reserve => {
