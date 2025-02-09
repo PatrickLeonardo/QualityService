@@ -3,7 +3,7 @@ import express from "express";
 import cors from 'cors';
 import ViteExpress from "vite-express";
 
-const data = JSON.parse(fs.readFileSync('./api/data.json'));
+const data = JSON.parse(fs.readFileSync('./data.json'));
 const app = express();
 
 const corsOptions = {
