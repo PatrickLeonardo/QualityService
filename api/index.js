@@ -1,7 +1,6 @@
 import fs from "fs"
 import express from "express";
 import cors from 'cors';
-import ViteExpress from "vite-express";
 
 const data = JSON.parse(fs.readFileSync('./data.json'));
 const app = express();
@@ -12,8 +11,6 @@ app.get("/api", (_, res) => {
     res.send(data)
 });
 
-const server = app.listen(3000, "0.0.0.0", () => {
+app.listen(3000, () => {
     console.log("Server is listening...")
 });
-
-ViteExpress.bind(app, server);
