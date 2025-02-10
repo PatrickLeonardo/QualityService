@@ -7,10 +7,12 @@ const app = express();
 
 app.use(cors())
 
+app.get("/", (_, res) => {
+    res.send("Hello!")
+});
+
 app.get("/api", (_, res) => {
     res.send(data)
 });
 
-app.listen(3000, () => {
-    console.log("Server is listening...")
-});
+export default app;

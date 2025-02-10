@@ -1,12 +1,12 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API using Express",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "build": "node index.js",
+    "start": "node index.js", // Adicionando um script de start
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
