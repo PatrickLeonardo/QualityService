@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path";
 import express from "express";
-import favicon from "serve-favicon";
+//import favicon from "serve-favicon";
 import cors from 'cors';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
@@ -18,12 +18,16 @@ try {
 
 const app = express();
 
-app.use(favicon(path.join(__dirname,'./public/','Q&S-BRANCO-PNG.ico')));
+//app.use(favicon(path.join(__dirname,'./public/', 'Q&S-BRANCO-PNG.ico')));
 app.use(cors())
 
 app.get("/", (_, res) => {
     res.send("Hello!")
 });
+
+app.get("/favicon.ico", (_, res) => {
+    res.sendFile(__dirname + '/public/favicon.ico');
+})
 
 app.get("/api", (_, res) => {
     res.send(data)
