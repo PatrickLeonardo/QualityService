@@ -26,7 +26,7 @@ app.get("/", (_, res) => {
 });
 
 app.get("/favicon.ico", (_, res) => {
-    res.sendFile(__dirname + '/public/favicon.ico');
+    res.sendFile(__dirname + './public/favicon.ico');
 })
 
 app.get("/api", (_, res) => {
