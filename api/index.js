@@ -18,7 +18,7 @@ try {
 
 const app = express();
 
-app.use(favicon(path.join(__dirname,'../img','Q&S-BRANCO-PNG.ico')));
+app.use(favicon(path.join(__dirname,'./public/','Q&S-BRANCO-PNG.ico')));
 app.use(cors())
 
 app.get("/", (_, res) => {
