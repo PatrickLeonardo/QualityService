@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path";
 import express from "express";
+import favicon from "serve-favicon";
 import cors from 'cors';
 
 const __dirname = path.dirname(new URL(import.meta.url).pathname);
@@ -17,6 +18,7 @@ try {
 
 const app = express();
 
+app.use(favicon(path.join(__dirname,'../img','Q&S-BRANCO-PNG.ico')));
 app.use(cors())
 
 app.get("/", (_, res) => {
